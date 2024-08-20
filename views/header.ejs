@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>SkillVenue</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<a href="/"><div class="logo"><img src="images/icon/favicon.png" alt="logo"></div></a>
+			<ul>
+				<li><a  href="/home" role="button">Home</a></li>
+				<li><a href="/portfilio" role="button">Portfolio</a></li>
+				<li><a href="/services" role="button">Services</a></li>
+				<li><a href="/contact" role="button">Contact</a></li>
+				<li><a href="/review" role="button">Review</a></li>
+				<li><a href="/subject" role="button">Subject</a></li>
+				<li><a href="/feedback" role="button">Feedback</a></li>
+
+			
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login">Login</a>
+				<a class="reg" href="register">Register</a>
+			
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		

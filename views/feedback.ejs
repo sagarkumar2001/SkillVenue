@@ -1,0 +1,23 @@
+<%- include('header') %>
+
+<div class="title2" id="feedBACK">
+    <span>Give Feedback</span>
+    <div class="shortdesc2">
+        <p>Please share your valuable feedback to us</p>
+    </div>
+</div>
+
+<div class="feedbox">
+    <div class="feed">
+        <form action="/fed" method="POST" >
+            <label>Your Name</label><br>
+            <input type="text" name="person" class="fname" required="required"><br>
+            <label>Email</label><br>
+            <input type="email" name="mail" required="required"><br>
+            <label>Additional Details</label><br>
+            <textarea type="textarea" name="additional"></textarea><br>
+            <button type="submit" id="csubmit">Send Message</button>
+        </form>
+    </div>
+</div>
+<%- include('footer') %>

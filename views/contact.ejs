@@ -1,0 +1,24 @@
+<%- include('header') %>
+
+<div class="diffSection" id="contactus_section">
+    <center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+    <div class="csec"></div>
+    <div class="back-contact">
+        <div class="cc">
+        <form action="/contact" method="POST">
+            <label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+            <center>
+            <input type="text" name="fname" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+            </center>
+            <label>Email <span class="imp">*</span></label><br>
+            <input type="email" name="email" style="width: 100%" required="required"><br>
+            <label>Message <span class="imp">*</span></label><br>
+            <input type="text" name="message" style="width: 100%" required="required"><br>
+            <label>Additional Details</label><br>
+            <textarea type="textarea" name="additional"></textarea><br>
+            <button type="submit" id="csubmit">Send Message</button>
+        </form>
+        </div>
+    </div>
+</div>
+<%- include('footer') %>

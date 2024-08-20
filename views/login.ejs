@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<title>Login SignUp</title>
+	<link rel="stylesheet" type="text/css" href="css/loginStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+		<div class="form-box">
+			<div class="button-box">
+			
+				<div class=".btn" style="color:black;font-size: x-large;font-style: oblique;font-weight:400;font-family:cursive;text-align:center; ">Login</div>
+			</div>
+			<div class="social-icons">
+				<img src="images/icon/fb2.png">
+				<img src="images/icon/insta2.png">
+				<img src="images/icon/tt2.png">
+			</div>
+			
+			<!-- Login Form -->
+			<form id="login" class="input-group" action="/login" method="POST">
+				<div class="inp">
+					<img src="images/icon/user.png"><input type="email" id="email" class="input-field" placeholder="Username or Email" style="width: 88%; border:none;" required="required" name="username">
+				</div>
+				<div class="inp">
+					<img src="images/icon/password.png"><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required" name="password">
+				</div>
+				<input type="checkbox" class="check-box">Remember Password
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+
+			<div class="other" id="other">
+				<div class="instead">
+					<h3>or</h3>
+				</div>
+				<button class="connect" onclick="google()">
+					<img src="images/icon/google.png"><span>Sign in with Google</span>
+				</button>
+				<a href="register" style="text-align:center;">Don't have an account?</a>
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
